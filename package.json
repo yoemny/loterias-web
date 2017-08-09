@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "name": "loterias-web",
+  "version": "0.0.1",
+  "description": "Loterias web, Node.js app using Express 4 and Angular4",
   "engines": {
     "node": "6.11.1"
   },
@@ -20,12 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://git.heroku.com/lotterias.git"
   },
   "keywords": [
     "node",
     "heroku",
-    "express"
+    "express",
+    "angular4"
   ],
   "license": "MIT"
 }
