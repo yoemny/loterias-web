@@ -1,18 +1,16 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const http = require('http');
+const path = require('path');
 
-app.set('port', (process.env.PORT || 5000));
+const app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'dist')));
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-
-app.get('/', function(request, response) {
-  response.render('pages/index');
+app.get('*', (request, response) => {
+  response.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+app.set('port', (process.env.PORT || 3000));
+
+const server = http.createServer(app);
+server.listen(3000, () => console.log('Running'));
