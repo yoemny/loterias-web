@@ -13,4 +13,4 @@ app.get('*', (request, response) => {
 app.set('port', (process.env.PORT || 3000));
 
 const server = http.createServer(app);
-server.listen(3000, () => console.log('Running'));
+server.listen(app.get('port'), () => console.log('Running'));
