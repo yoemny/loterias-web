@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = '';
-  private apiUrl = 'http://localhost:8080/api/euromillon/update';
+  private apiUrl = 'https://loterias.cfapps.io/api/euromillon/update';
 
   constructor(private http: Http) {
     this.getUpdateDate();
