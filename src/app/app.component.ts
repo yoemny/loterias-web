@@ -10,12 +10,12 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
 
-  private isUpdated = true;
-  private isUpdating = false;
+  isUpdated = true;
+  isUpdating = false;
 
-  private outdatedMsg = "An update is available";
-  private updateMsg = "Last update date: ";
-  private updateDate = "";
+  outdatedMsg = "An update is available";
+  updateMsg = "Last update date: ";
+  updateDate = "";
   private updateUrl = 'https://loterias.cfapps.io/api/euromillon/update';
   private isUpdateUrl = 'https://loterias.cfapps.io/api/euromillon/isupdated';
 
