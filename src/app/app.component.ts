@@ -16,8 +16,8 @@ export class AppComponent {
   outdatedMsg = "An update is available";
   updateMsg = "Last update date: ";
   updateDate = "";
-  private updateUrl = 'https://loterias.cfapps.io/api/euromillon/update';
-  private isUpdateUrl = 'https://loterias.cfapps.io/api/euromillon/isupdated';
+  private updateUrl = 'http://loterias-api.herokuapp.com/api/euromillon/update';
+  private isUpdateUrl = 'http://loterias-api.herokuapp.com/api/euromillon/isupdated';
 
   constructor(private http: Http) {
     this.isUpdateData();
